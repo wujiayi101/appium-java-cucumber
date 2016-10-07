@@ -103,6 +103,13 @@ Running iOS Checks
 
 ✔ All Checks were successful
 ```
+### iOS Instrument Patch:
+Apple's Instruments / UIAutomation tool have an built in delay issue, so the automation test runs very slow. There is a third party patch fixed the issue. We created an script to apply the patch without any pains.
+```
+git clone https://github.com/wujiayi47/ios-sim-appcelerator.git
+cd qa-tools/ios-sim-appcelerator
+./accelerate_ios_sim.sh
+```
 
 ## Run Automation Test
 
@@ -122,12 +129,4 @@ CukeTest.java will be the entry point of your project, run CukeTest with followi
 or
 ```
 -Dplatform=Android -Dapp="xxx.apk" -Dcucumber.options="--tags @login" -Dserver=UAT
-```
-
-### iOS Instrument Patch:
-Apple's Instruments / UIAutomation tool have an built in delay issue, so the automation test runs very slow. There is a third party patch fixed the issue. We created an script to apply the patch without any pains.
-```
-git clone https://github.com/wujiayi47/ios-sim-appcelerator.git
-cd qa-tools/ios-sim-appcelerator
-./accelerate_ios_sim.sh
 ```
