@@ -63,15 +63,14 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/platform-tools/adb
 ```
-
-3. Save .bash_profile and run:
+3. Save `.bash_profile` and run:
 ```
 source ~/.bash_profile
 ```
 
 #### iOS
-1. Download xCode7.3 stable release version: https://developer.apple.com/xcode/download/
-2. Under xcode, Add simulator "iPhone 6 + OS version 9.3"
+1. Download `xCode7.3` stable release version: https://developer.apple.com/xcode/download/
+2. Under xcode, Add simulator `iPhone 6 + OS version 9.3`
 3. Verify iOS & Android dependencies are installed, to verify that iOS and Android dependencies are met you can use appium-doctor.
 ```
 Install appium-doctor
