@@ -1,3 +1,10 @@
+Say you have already a Jenkins build job or Pipeline for you git project,  and you want to auto trigger Jenkins for every Git commit.  You can easily set this up in bitbucket settings:  
+
+1. Go to your git home project
+2. Click `Settings` - `Hooks`
+3. Enabled `Bitbucket Server Webhook to Jenkins`
+
+
 # Appium Test Example
 This project is an unified iOS+Android test project that is built on top of [appium-wrapper](https://github.com/wujiayi47/appium-wrapper), and make sure of Page Object Pattern and Cucumber JVM tools to improve Maintainability and traceability of test scripts.  
 
@@ -56,14 +63,14 @@ brew install maven
 ### Android & iOS Software Dependencies
 #### Android
 1. Download Android Studio 2.0: http://developer.android.com/sdk/index.html
-Launch Android Studio - Tools - SDK Manager, update and download latest SDK tools
-2. Add JAVA JDK and Android SDK environment variable to ~/.bash_profile:
+2. Launch Android Studio - Tools - SDK Manager, update and download latest SDK tools
+3. Add JAVA JDK and Android SDK environment variable to ~/.bash_profile:
 ```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/platform-tools/adb
 ```
-3. Save `.bash_profile` and run:
+4. Save `.bash_profile` and run:
 ```
 source ~/.bash_profile
 ```
