@@ -62,15 +62,15 @@ brew install maven
 
 ### Android & iOS Software Dependencies
 #### Android
-1. Download Android Studio 2.0: http://developer.android.com/sdk/index.html
-2. Launch Android Studio - Tools - SDK Manager, update and download latest SDK tools
-3. Add JAVA JDK and Android SDK environment variable to ~/.bash_profile:
+* Download Android Studio 2.0: http://developer.android.com/sdk/index.html
+* Launch Android Studio - Tools - SDK Manager, update and download latest SDK tools
+* Add JAVA JDK and Android SDK environment variable to ~/.bash_profile:
 ```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/platform-tools/adb
 ```
-4. Save `.bash_profile` and run:
+* Save `.bash_profile` and run:
 ```
 source ~/.bash_profile
 ```
