@@ -10,6 +10,7 @@ This project is an unified iOS+Android test project that is built on top of [app
 * No iOS physical device is needed at this moment, because mobile automation is now running on Simulator
 
 ### Install Appium Server
+
 #### Command Line Version
 Install Homebrew: 
 ```
@@ -24,14 +25,14 @@ Install appium by npm
 npm install -g appium@1.4.13
 ```
 
-
 #### GUI Version
 Install version 1.4.13 
 ```
 https://bitbucket.org/appium/appium.app/downloads/
 ```
 
-Install JAVA JDK and Maven
+
+### Install JAVA JDK and Maven
 
 Check if java jdk (1.8 or higher) is already install on your mac:
 ```
@@ -51,7 +52,6 @@ Install Maven
 ```
 brew install maven
 ```
-Download and put a pre-configured maven settings.xml file to ~/.m2
 
 ### Android & iOS Software Dependencies
 #### Android
@@ -114,7 +114,10 @@ or
 ```
 ./start_ios_server.sh
 ```
+
 ### Run appium test
+Import current project and its dependency [appium-wrapper](https://github.com/wujiayi47/appium-wrapper) project.
+
 CukeTest.java will be the entry point of your project, run CukeTest with following VM arguments:
 ```
 -Dplatform=iOS -Dapp="xxx.app" -Dcucumber.options="--tags @login" -Dserver=UAT
