@@ -122,7 +122,7 @@ or
 ./start_ios_server.sh
 ```
 ### Run appium test
-CukeTest.java will be the entry point of your project, run CukeTest with following VM arguments:
+`CukeTest.java` will be the entry point of your project, run CukeTest with following VM arguments:
 ```
 -Dplatform=iOS -Dapp="xxx.app" -Dcucumber.options="--tags @login" -Dserver=UAT
 ```
