@@ -114,10 +114,12 @@ cd ios-sim-appcelerator
 
 ### Start appium server 
 ```
+cd scripts
 ./start_android_server.sh
 ```
 or
 ```
+cd scripts
 ./start_ios_server.sh
 ```
 
