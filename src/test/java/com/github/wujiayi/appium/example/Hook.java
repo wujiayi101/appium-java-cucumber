@@ -1,7 +1,7 @@
 package com.github.wujiayi.appium.example;
 
 
-import com.github.wujiayi.appium.example.screens.cuke.Cuke;
+import com.github.wujiayi.appium.screens.cuke.Cuke;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

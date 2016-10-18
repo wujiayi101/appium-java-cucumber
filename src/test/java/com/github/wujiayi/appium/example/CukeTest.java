@@ -28,14 +28,6 @@ public class CukeTest {
     @BeforeClass
     public static void beforeClass() {
         logger.info("@BeforeClass:beforeClass...");
-
-        // clean up output folders
-        try {
-            FileUtils.deleteDirectory(new File("output"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         if (null == System.getProperty("app", null)) {
             Assert.fail("Invalid app path: " + app);
         }
@@ -43,14 +35,6 @@ public class CukeTest {
 
     @AfterClass
     public static void afterClass() {
-        try {
-            // clear jenkins env file
-            FileUtils.write(new File("jenkins_env.properties"), "");
-
-            // appends test summary to jenkins env
-            FileUtils.write(new File("jenkins_env.properties"), TestSummary.getInstance().getTestSummary(), true);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        logger.info("@BeforeClass:beforeClass...");
     }
 }

@@ -1,6 +1,6 @@
-package com.github.wujiayi.appium.example.screens.ios;
+package com.github.wujiayi.appium.screens.ios;
 
-import com.github.wujiayi.appium.example.screens.WelcomeScreen;
+import com.github.wujiayi.appium.screens.WelcomeScreen;
 import org.openqa.selenium.By;
 
 /**

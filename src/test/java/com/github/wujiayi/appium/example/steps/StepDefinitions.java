@@ -1,6 +1,6 @@
 package com.github.wujiayi.appium.example.steps;
 
-import com.github.wujiayi.appium.example.screens.cuke.Cuke;
+import com.github.wujiayi.appium.screens.cuke.Cuke;
 import cucumber.api.java.en.Then;
 
 /**

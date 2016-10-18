@@ -1,8 +1,8 @@
-package com.github.wujiayi.appium.example.screens.cuke;
+package com.github.wujiayi.appium.screens.cuke;
 
-import com.github.wujiayi.appium.example.screens.WelcomeScreen;
-import com.github.wujiayi.appium.example.screens.android.AndroidWelcomeScreen;
-import com.github.wujiayi.appium.example.screens.ios.IosWelcomeScreen;
+import com.github.wujiayi.appium.screens.WelcomeScreen;
+import com.github.wujiayi.appium.screens.android.AndroidWelcomeScreen;
+import com.github.wujiayi.appium.screens.ios.IosWelcomeScreen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
