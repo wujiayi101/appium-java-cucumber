@@ -1,10 +1,3 @@
-Say you have already a Jenkins build job or Pipeline for you git project,  and you want to auto trigger Jenkins for every Git commit.  You can easily set this up in bitbucket settings:  
-
-1. Go to your git home project
-2. Click `Settings` - `Hooks`
-3. Enabled `Bitbucket Server Webhook to Jenkins`
-
-
 # Appium Test Example
 This project is an unified iOS+Android test project that is built on top of [appium-wrapper](https://github.com/wujiayi47/appium-wrapper), and make sure of Page Object Pattern and Cucumber JVM tools to improve Maintainability and traceability of test scripts.  
 
