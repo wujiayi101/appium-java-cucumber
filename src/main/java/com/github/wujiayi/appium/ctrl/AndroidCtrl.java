@@ -23,7 +23,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 /**
  * @author chris.wu
  */
-public class AndroidCtrl extends MobileCtrl {
+public class AndroidCtrl extends Ctrl {
 
     Process capVideoProc = null;
     Process loggingProc = null;

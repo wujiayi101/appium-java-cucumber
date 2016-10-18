@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author chris.wu
  */
-public class IOSCtrl extends MobileCtrl {
+public class IOSCtrl extends Ctrl {
 
     String TEMP_LOG_FILE = "/tmp/appium.ios.log";
 

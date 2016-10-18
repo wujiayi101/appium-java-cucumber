@@ -17,17 +17,17 @@ public class AndroidWelcomeScreen extends WelcomeScreen {
 
     @Override
     public void clickStart() {
-        mobileCtrl.click(btn_start);
+        ctrl.click(btn_start);
     }
 
     @Override
     public String getTitle(int screenIdx) {
-        return mobileCtrl.findElements(txt_title).get(screenIdx).getText();
+        return ctrl.findElements(txt_title).get(screenIdx).getText();
     }
 
     @Override
     public String getDescription(int screenIdx) {
-        return mobileCtrl.findElements(txt_description).get(screenIdx).getText();
+        return ctrl.findElements(txt_description).get(screenIdx).getText();
     }
 
     @Override

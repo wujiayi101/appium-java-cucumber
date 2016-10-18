@@ -1,6 +1,5 @@
 package com.github.wujiayi.appium.screens;
 
-import com.github.wujiayi.appium.screen.Screen;
 
 /**
  * @author chris.wu

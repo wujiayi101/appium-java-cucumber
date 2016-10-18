@@ -1,10 +1,10 @@
-package com.github.wujiayi.appium.screens.ios;
+package com.github.wujiayi.appium.screens;
 
 import com.github.wujiayi.appium.consts.CapabilityType;
 import com.github.wujiayi.appium.consts.MobileCtrlException;
 import com.github.wujiayi.appium.ctrl.AndroidCtrl;
 import com.github.wujiayi.appium.ctrl.IOSCtrl;
-import com.github.wujiayi.appium.ctrl.MobileCtrl;
+import com.github.wujiayi.appium.ctrl.Ctrl;
 import io.appium.java_client.remote.MobilePlatform;
 import org.openqa.selenium.By;
 
@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
  */
 public abstract class Screen {
 
-    protected static MobileCtrl mobileCtrl;
+    protected static Ctrl ctrl;
 
     public void waitForScreen() {
         waitForScreen(CapabilityType.DEFAULT_WAIT_TIME);
@@ -30,7 +30,7 @@ public abstract class Screen {
     protected void waitForScreen(By[] atThis, int timeout) {
         try {
             for (By by : atThis) {
-                mobileCtrl.findElement(by, timeout);
+                ctrl.findElement(by, timeout);
             }
         } catch (MobileCtrlException e) {
             throw new MobileCtrlException(String.format("%s, not at %s", e.getMessage(), getScreenName()));
@@ -38,11 +38,11 @@ public abstract class Screen {
     }
 
     public void setUp(String platform, String appPath) {
-        mobileCtrl = createMobileCtrl(platform);
-        mobileCtrl.setUp(appPath);
+        ctrl = createMobileCtrl(platform);
+        ctrl.setUp(appPath);
     }
 
-    private MobileCtrl createMobileCtrl(String platform) {
+    private Ctrl createMobileCtrl(String platform) {
         if (platform.equals(MobilePlatform.ANDROID)) {
             return new AndroidCtrl();
         } else {
@@ -65,11 +65,11 @@ public abstract class Screen {
     }
 
     public void reset() {
-        mobileCtrl.reset();
+        ctrl.reset();
     }
 
     public void tearDown() {
-        mobileCtrl.tearDown();
+        ctrl.tearDown();
     }
 
     public boolean verifyText(String text) {
@@ -77,27 +77,27 @@ public abstract class Screen {
     }
 
     public boolean verifyText(String text, int timeout) {
-        return mobileCtrl.verifyText(text, timeout);
+        return ctrl.verifyText(text, timeout);
     }
 
     public void takeScreenShot(String fileName, String dir) {
-        mobileCtrl.takeScreenshot(fileName, dir);
+        ctrl.takeScreenshot(fileName, dir);
     }
 
     public void startVideo() {
-        mobileCtrl.startVideo();
+        ctrl.startVideo();
     }
 
     public void endVideo(String dirPath, String filename) {
-        mobileCtrl.endVideo(dirPath, filename);
+        ctrl.endVideo(dirPath, filename);
     }
 
     public void startLog() {
-        mobileCtrl.startLog();
+        ctrl.startLog();
     }
 
     public void endLog(String dirPath, String filename) {
-        mobileCtrl.endLog(dirPath, filename);
+        ctrl.endLog(dirPath, filename);
     }
 
     public void acceptAlert() {
@@ -105,7 +105,7 @@ public abstract class Screen {
     }
 
     public void acceptAlert(int timeout) {
-        mobileCtrl.acceptAlert(timeout);
+        ctrl.acceptAlert(timeout);
     }
 
     public void dismissAlert() {
@@ -113,7 +113,7 @@ public abstract class Screen {
     }
 
     public void dismissAlert(int timeout) {
-        mobileCtrl.dismissAlert(timeout);
+        ctrl.dismissAlert(timeout);
     }
 
 

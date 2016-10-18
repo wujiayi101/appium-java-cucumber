@@ -5,6 +5,10 @@ package com.github.wujiayi.appium.consts;
  */
 public class MobileCtrlException extends RuntimeException {
 
+    public MobileCtrlException(Exception e) {
+        super(e);
+    }
+
     public MobileCtrlException(String message) {
         super(message);
     }

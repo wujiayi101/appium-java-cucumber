@@ -17,17 +17,17 @@ public class IosWelcomeScreen extends WelcomeScreen {
 
     @Override
     public void clickStart() {
-        mobileCtrl.click(btn_start);
+        ctrl.click(btn_start);
     }
 
     @Override
     public String getTitle(int screenIdx) {
-        return mobileCtrl.getText(txt_title);
+        return ctrl.getText(txt_title);
     }
 
     @Override
     public String getDescription(int screenIdx) {
-        return mobileCtrl.getText(txt_description);
+        return ctrl.getText(txt_description);
     }
 
     @Override

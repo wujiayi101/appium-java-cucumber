@@ -18,9 +18,9 @@ import io.appium.java_client.AppiumDriver;
 /**
  * @author chris.wu
  */
-public abstract class MobileCtrl {
+public abstract class Ctrl {
 
-    protected final static Logger logger = LoggerFactory.getLogger(MobileCtrl.class.getSimpleName());
+    protected final static Logger logger = LoggerFactory.getLogger(Ctrl.class.getSimpleName());
     protected AppiumDriver<WebElement> driver = null;
 
     /**
