@@ -1,6 +1,4 @@
-# Appium Test Example
-This project is an unified iOS+Android test project that is built on top of [appium-wrapper](https://github.com/wujiayi47/appium-wrapper), and make sure of Page Object Pattern and Cucumber JVM tools to improve Maintainability and traceability of test scripts.  
-
+# Appium Java Example
 
 ## Test Environment Setup
 
